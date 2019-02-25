@@ -6,7 +6,7 @@ Virtual Tourist is an iOS app that allows users to visit virtual locations by ad
 virtual-Tourist allows users to drop pins on a map, as if they were stops on a tour. If the user tap on one of the selected pins, the app will download and store images of the picked location from Flickr.
 
 The user will be able to view the images in a collection view and can download new images by clicking on a **New Collection** button located on the collection view window.
-
+![screen shot 2019-02-25 at 8 30 28 am](https://user-images.githubusercontent.com/45097517/53317072-52d20680-38db-11e9-98b7-32dacacd47d0.png)
 ## Implementation
 
 The app has two view controller :
