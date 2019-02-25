@@ -23,6 +23,12 @@ class FlickrData:NSObject {
         let session = URLSession.shared
         let task = session.dataTask(with: request) { data, response, error in
             guard error == nil else {
+                if Reachability.isConnectedToNetwork() == false
+                {
+                   
+                    debugPrint("network connection failed ")
+                }
+                
                 completion(error!, nil)
                 
                 

@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-940" y="7"/>
         </scene>
-        <!--Locations Map-->
+        <!--Virtual Tourist-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LocationsMap" customModule="Virtual_Tourist" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cQB-p4-ucz"/>
+                    <navigationItem key="navigationItem" title="Virtual Tourist" id="cQB-p4-ucz"/>
                     <connections>
                         <outlet property="mapView" destination="y6c-5w-zBG" id="lwJ-uu-e49"/>
                         <segue destination="cSi-hT-hzz" kind="push" identifier="toCollectionView" id="Mdn-LW-AwR"/>
@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="66" y="-24"/>
         </scene>
-        <!--Collection View-->
+        <!--Photo Collection-->
         <scene sceneID="Uxj-P0-4Yc">
             <objects>
-                <viewController id="cSi-hT-hzz" customClass="collectionView" customModule="Virtual_Tourist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cSi-hT-hzz" customClass="CollectionView" customModule="Virtual_Tourist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KAf-Kz-NJI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,6 +92,10 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
                                 </collectionViewFlowLayout>
+                                <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="Dbi-bC-VTD">
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="378"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </activityIndicatorView>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imageCell" id="HUy-WG-dZj" customClass="collectionViewCell" customModule="Virtual_Tourist" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="157" height="131"/>
@@ -163,7 +167,7 @@
                         <viewLayoutGuide key="safeArea" id="Gve-hP-zT6"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="8ly-tN-GvI">
+                    <navigationItem key="navigationItem" title="Photo Collection" id="8ly-tN-GvI">
                         <barButtonItem key="leftBarButtonItem" title="back" id="JbI-iA-F8R">
                             <connections>
                                 <action selector="backBtnTappedWithSender:" destination="cSi-hT-hzz" id="1Vh-7S-iz1"/>
@@ -173,6 +177,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="backBtn" destination="JbI-iA-F8R" id="igH-F4-mGB"/>
+                        <outlet property="collectionViewActivityIndicator" destination="Dbi-bC-VTD" id="ByD-Ib-LYx"/>
                         <outlet property="locationMap" destination="8fM-MW-bUY" id="7Q5-xf-KtV"/>
                         <outlet property="myCollectionView" destination="ldB-Lz-obK" id="XlI-yf-ChX"/>
                         <outlet property="newCollectionBtn" destination="00M-S5-NYz" id="31U-nv-qe2"/>

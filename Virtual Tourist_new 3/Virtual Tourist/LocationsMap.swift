@@ -51,16 +51,18 @@ class LocationsMap: UIViewController {
     
     @IBAction func longGestureAnnotation(_ sender: UILongPressGestureRecognizer) {
         mapView.addGestureRecognizer( sender)
-        
+        if sender.state != .began{
+            return
+        }
         var tappedPoint = sender.location(in: mapView)
         var newCoordinates = mapView.convert(tappedPoint, toCoordinateFrom: mapView)
-     //     let annotation  =  appDelegate.annotation
+  
         let annotation = MyPinAnnotation()
     
            annotation.coordinate = newCoordinates
         datacontrol.savePin(lat: newCoordinates.latitude , lon: newCoordinates.longitude )
-//        annotation.pinData = DataController.shared.savePin(lat: newCoordinates.latitude , lon: newCoordinates.longitude )
-//
+
+
  
         mapView.addAnnotation(annotation)
      
@@ -76,13 +78,11 @@ class LocationsMap: UIViewController {
 
         let savedPins =
             datacontrol.loadPins()
-            //DataController.shared.loadPins()
         print("savedpins",savedPins.count)
         for pin in savedPins{
             let annotaion = MyPinAnnotation()
             annotaion.coordinate = CLLocationCoordinate2D(latitude: pin.latitude, longitude: pin.longitude)
             annotaion.pinData = pin
-          //  print("this is the pin", pin)
             mapView.addAnnotation(annotaion)
         }
     }
@@ -95,7 +95,7 @@ class LocationsMap: UIViewController {
         if (segue.identifier == "toCollectionView" ) {
          
             
-         if  let vc = segue.destination as? collectionView {
+         if  let vc = segue.destination as? CollectionView {
             vc.datacontroller = self.datacontrol
             vc.pin = selectedPin
           
@@ -139,7 +139,7 @@ extension LocationsMap : MKMapViewDelegate {
                 if pin.latitude == annotationLat && pin.longitude == annotationLong {
                     selectedPin = pin
                     performSegue(withIdentifier: "toCollectionView", sender: self)
-                    
+                    mapView.deselectAnnotation(view.annotation, animated: true)
                     break
                 }
             }

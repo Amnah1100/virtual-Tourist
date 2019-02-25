@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C503D0E92222D51A0029BB52 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503D0E82222D51A0029BB52 /* Reachability.swift */; };
 		C526A5BF220CA5FB00725E5A /* collectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526A5BE220CA5FB00725E5A /* collectionViewCell.swift */; };
 		C5B05DCA2206F9DC00680505 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05DC92206F9DC00680505 /* AppDelegate.swift */; };
-		C5B05DCC2206F9DC00680505 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05DCB2206F9DC00680505 /* ViewController.swift */; };
 		C5B05DCF2206F9DC00680505 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B05DCD2206F9DC00680505 /* Main.storyboard */; };
 		C5B05DD12206F9E000680505 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5B05DD02206F9E000680505 /* Assets.xcassets */; };
 		C5B05DD42206F9E000680505 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5B05DD22206F9E000680505 /* LaunchScreen.storyboard */; };
@@ -20,14 +20,14 @@
 		C5B05DE62206FD9C00680505 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05DE52206FD9C00680505 /* DataController.swift */; };
 		C5B05DE82206FEC600680505 /* LocationsMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05DE72206FEC600680505 /* LocationsMap.swift */; };
 		C5B05DEA2206FF1800680505 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05DE92206FF1800680505 /* MyPinAnnotation.swift */; };
-		C5B05DEC22074EB300680505 /* collectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05DEB22074EB300680505 /* collectionView.swift */; };
+		C5B05DEC22074EB300680505 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B05DEB22074EB300680505 /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C503D0E82222D51A0029BB52 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		C526A5BE220CA5FB00725E5A /* collectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = collectionViewCell.swift; path = ../collectionViewCell.swift; sourceTree = "<group>"; };
 		C5B05DC62206F9DC00680505 /* Virtual Tourist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virtual Tourist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B05DC92206F9DC00680505 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5B05DCB2206F9DC00680505 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5B05DCE2206F9DC00680505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5B05DD02206F9E000680505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5B05DD32206F9E000680505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		C5B05DE52206FD9C00680505 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		C5B05DE72206FEC600680505 /* LocationsMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsMap.swift; sourceTree = "<group>"; };
 		C5B05DE92206FF1800680505 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
-		C5B05DEB22074EB300680505 /* collectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionView.swift; sourceTree = "<group>"; };
+		C5B05DEB22074EB300680505 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +75,11 @@
 			children = (
 				C5B05DE92206FF1800680505 /* MyPinAnnotation.swift */,
 				C5B05DC92206F9DC00680505 /* AppDelegate.swift */,
-				C5B05DCB2206F9DC00680505 /* ViewController.swift */,
 				C526A5BE220CA5FB00725E5A /* collectionViewCell.swift */,
 				C5B05DCD2206F9DC00680505 /* Main.storyboard */,
 				C5B05DE72206FEC600680505 /* LocationsMap.swift */,
-				C5B05DEB22074EB300680505 /* collectionView.swift */,
+				C5B05DEB22074EB300680505 /* CollectionView.swift */,
+				C503D0E82222D51A0029BB52 /* Reachability.swift */,
 				C5B05DD02206F9E000680505 /* Assets.xcassets */,
 				C5B05DE02206FB8E00680505 /* API */,
 				C5B05DD22206F9E000680505 /* LaunchScreen.storyboard */,
@@ -171,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5B05DE62206FD9C00680505 /* DataController.swift in Sources */,
-				C5B05DCC2206F9DC00680505 /* ViewController.swift in Sources */,
+				C503D0E92222D51A0029BB52 /* Reachability.swift in Sources */,
 				C5B05DE22206FBEC00680505 /* FlickrData.swift in Sources */,
 				C5B05DEA2206FF1800680505 /* MyPinAnnotation.swift in Sources */,
 				C5B05DE42206FC1700680505 /* FlickrImage.swift in Sources */,
@@ -179,7 +179,7 @@
 				C5B05DDD2206FA2400680505 /* Model.xcdatamodeld in Sources */,
 				C526A5BF220CA5FB00725E5A /* collectionViewCell.swift in Sources */,
 				C5B05DDF2206FB6E00680505 /* FlickrAPI.swift in Sources */,
-				C5B05DEC22074EB300680505 /* collectionView.swift in Sources */,
+				C5B05DEC22074EB300680505 /* CollectionView.swift in Sources */,
 				C5B05DE82206FEC600680505 /* LocationsMap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
